@@ -24,7 +24,7 @@ def load_demo_image(image_size, device):
 image_size = 384
 image = load_demo_image(image_size=image_size, device=device)
 
-model_url = 'model_data/model_base_capfilt_large.pth'
+model_url = 'model_data/model_base.pth'
     
 model = blip_decoder(pretrained=model_url, image_size=image_size, vit='base')
 model.eval()
